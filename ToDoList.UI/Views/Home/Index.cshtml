@@ -1,0 +1,103 @@
+﻿
+<div>
+
+
+
+    <div class="row">
+
+        <div class="col-lg-4 inp">
+
+            @*<input onkeyup="searchFunction()" id="myInput" class="form-control mt-2" placeholder="SEARCH">
+                <span class="icon text-primary"><i class="fas fa-search"></i></span>*@
+
+            <h5 class="mt-2 text-light">Please New Add ToDo</h5>
+
+            <form>
+                <div class="form-group">
+                   
+                    <input class="form-control mb-3" required placeholder="Add ToDo " id="ToDoDesc">
+                </div>
+                
+
+                
+
+                <button type="submit" id="AddToDoButton" class="btn btn-danger w-100 mt-3 btn1">ADD TODO</button>
+
+            </form>
+        </div>
+
+
+        <div class="col-lg-8">
+
+            <table id="tablo" class="table table-hover">
+                <thead>
+                    <tr class="text-light">
+                        <th>Açıklama</th>
+                        <th>Oluşturma Tarihi</th>
+                        <th>Güncelleme Tarihi</th>                        
+                        <th>Transaction</th>
+                        <th>Transaction</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
+
+            
+
+            <div class="modal fade" id="UpdateToDoListModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title text-black-50">Add Contact Information</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="mb-3 row">
+                                <label for="descToDo" class="col-sm-4 col-form-label text-black-50">Description</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="descToDo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="UpdateToDoButton" data-dismiss="modal">Add</button>
+                            <input id="AddToDo" type="hidden">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+
+<script src="~/js/DirectoryView.js"></script>
+
+
+
